@@ -1,0 +1,89 @@
+.hl {
+    color: #E76F51
+}
+
+#git{
+    font-size: 1000%;
+    color: #E76F51;
+;}
+
+.shadow {
+    text-shadow: 2px 2px #000000 !important;
+}
+
+.strokeme {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
+  }
+
+.blurred .slide-background-content {
+    filter: blur(5px)
+}
+
+.blurred2 .slide-background-content {
+    filter: blur(10px) grayscale(20%)
+}
+
+
+/* fragments start */
+.fragment.fragment-outline,
+.fragment.fragment-hl-orange,
+.fragment.fragment-remove {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.fragment.fragment-outline.visible {
+    /* some attributes */
+}
+
+.fragment.fragment-outline.current-fragment {
+    padding: 10px;
+    outline: 3px solid green;
+    outline-offset: 4px;
+}
+
+.fragment.fragment-hl-orange.visible{
+    color: #E76F51
+}
+
+.fragment.fragment-remove.visible{
+    color: #E76F51;
+    text-decoration:line-through;
+}
+
+
+.blockquote::before {
+    font-family: FontAwesome;
+    content: '\f10d'; /*quote left icon*/
+  }
+/* fragments end */
+
+
+/* blockquote start */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/gloria-hallelujah-v21-latin/gloria-hallelujah-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  
+.blockquote{
+    font-family: "Gloria Hallelujah", "normal";
+}
+
+.attribution{
+    position:fixed;
+    font-family: "Gloria Hallelujah", "normal";
+    font-size: 80%;
+    text-align: right;
+    bottom: 20px;
+    right: 20px;
+}
+
+.attribution::before{
+    content: "-";
+}
+
+/* blockquote end */
