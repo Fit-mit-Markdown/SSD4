@@ -1,3 +1,57 @@
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/gloria-hallelujah-v21-latin/gloria-hallelujah-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* yanone-kaffeesatz-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/yanone-kaffeesatz-v30-latin/yanone-kaffeesatz-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  
+body .reveal {
+    font-family: "Yanone Kaffeesatz", "normal";
+}
+
+
+
+/* flow chart start */
+
+#quellcode{
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+
+.flow .state,
+.flow .process{
+    width: 150px;
+    padding: 20px;
+    background-color: #264653;
+}
+
+/* .flow .process{
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+} */
+
+.process{
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);}
+
+
+/* flow chart end */
+
+
 .hl {
     color: #E76F51
 }
@@ -5,7 +59,13 @@
 #git{
     font-size: 1000%;
     color: #E76F51;
-;}
+}
+
+#vr-greshan-3{
+    border-radius: 36px;
+    filter:brightness(150%) contrast(120%) saturate(180%);
+
+}
 
 .shadow {
     text-shadow: 2px 2px #000000 !important;
@@ -20,30 +80,49 @@
 }
 
 .blurred2 .slide-background-content {
-    filter: blur(10px) grayscale(20%)
+    filter: blur(20px) grayscale(20%)
+}
+
+.right-align{
+    position:fixed; 
+    right: 0
 }
 
 
 /* fragments start */
 .fragment.fragment-outline,
 .fragment.fragment-hl-orange,
-.fragment.fragment-remove {
+.fragment.fragment-remove,
+.fragment.fragment-hide,
+.fragment.fragment-underline,
+.fragment.fragment-5r,
+.fragment.fragment-background
+{
     visibility: visible !important;
     opacity: 1 !important;
 }
 
-.fragment.fragment-outline.visible {
-    /* some attributes */
-}
-
 .fragment.fragment-outline.current-fragment {
     padding: 10px;
-    outline: 3px solid green;
+    outline: 3px solid #E76F51;
     outline-offset: 4px;
 }
 
+.fragment.fragment-background.current-fragment{
+    background-color: #E76F51;
+}
+
+.fragment.fragment-5r.current-fragment{
+    color: #E76F51;
+}
+
+
 .fragment.fragment-hl-orange.visible{
     color: #E76F51
+}
+
+.fragment.fragment-underline.visible{
+    text-decoration: underline;
 }
 
 .fragment.fragment-remove.visible{
@@ -52,38 +131,38 @@
 }
 
 
-.blockquote::before {
-    font-family: FontAwesome;
-    content: '\f10d'; /*quote left icon*/
-  }
+.fragment.fragment-hide.visible{
+    margin-right: -100%;
+    /* transition-duration: 2s; */
+    opacity: 0 !important;
+}
+
+
+
+
 /* fragments end */
 
 
 /* blockquote start */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Gloria Hallelujah';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/gloria-hallelujah-v21-latin/gloria-hallelujah-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
 
-  
+
+
+.blockquote::before {
+    font-family: FontAwesome;
+    content: '\f10d'; /*quote left icon*/
+}
+
 .blockquote{
     font-family: "Gloria Hallelujah", "normal";
 }
 
 .attribution{
-    position:fixed;
-    font-family: "Gloria Hallelujah", "normal";
-    font-size: 80%;
-    text-align: right;
-    bottom: 20px;
-    right: 20px;
+    font-size: large;
+    padding-top: 20px;
 }
 
 .attribution::before{
-    content: "-";
+    content: "- ";
 }
 
 /* blockquote end */
