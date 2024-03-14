@@ -161,13 +161,7 @@ body .reveal {
 
 
 
-#methoden{
-    padding: 20px; 
-    display: grid; 
-    width: 70%;
-    grid-auto-flow: column;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-rows: repeat(3, 1.4em);}
+
 
 #vr-greshan-3{
     border-radius: 36px;
@@ -199,6 +193,8 @@ body .reveal {
     padding: 30px;
 
 }
+
+
 
 #fox-title{
     text-decoration: underline; 
@@ -267,7 +263,6 @@ body .reveal {
 .fragment.fragment-remove,
 .fragment.fragment-hide,
 .fragment.fragment-underline,
-.fragment.fragment-5r,
 .fragment.fragment-background
 {
     visibility: visible !important;
