@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Students4OER II</title>
+
+	<link rel="stylesheet" href="revealjs/dist/reset.css">
+	<link rel="stylesheet" href="revealjs/dist/reveal.css">
+	<link rel="stylesheet" href="revealjs/dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="revealjs/plugin/highlight/monokai.css">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-color="#264653">
+
+
+					<h1 class="r-fit-text strokeme">Students<span class="hl">4</span>OER II</h1>
+
+					<h3 class="r-fit-text strokeme">
+						<span class="fragment fragment-outline">Sustainability</span>
+						through
+						<span class="fragment fragment-outline">sharing</span>
+						and
+						<span class="fragment fragment-outline">cocreation</span>
+					</h3>
+
+					<!-- <img data-src="images/Def--ZHAW_Logo_RGB_Neg--sustainable_impact_program.png"> -->
+
+					<div class="r-hstack strokeme">
+						<div class="fragment">
+							<p style="margin-bottom: 0px !important; font-size: x-large;">Unterstützt durch:</p>
+							<img style="margin: 0px !important; height: 200px; padding: 10px; padding: 0px !important;" data-src="images/Def--ZHAW_Logo_RGB_Pos--sustainable_impact_program.png">
+						</div>
+						<div class="fragment">
+							<p style="margin-bottom: 0px !important; font-size: x-large;">Folien lizenziert als:</p>
+							<img  style="margin: 0px !important; height: 200px; padding: 10px; padding: 0px !important;" data-src="images/CC_BY_icon.svg">
+						</div>
+					</div>
+
+			
+
+
+					<aside class="notes">
+						<ul>
+							<li>Wir möchten die Nachhaltigkeit in der Entwicklung von OER fördern</li>
+							<li>durch Teilen und "Cocreation" (gibt es da eine gute Übersetzung?)</li>
+						</ul>
+					</aside>
+
+			</section>
+			<section>
+				<section data-background-color="#264653">
+					<h2>1. Offener Quellcode</h2>
+
+					<p>einfach <span class="difficulty-dots">●○○</span></p>
+				</section>
+
+				<section>
+
+					<p style="margin-bottom: 150px;">Der klassische Workflow:</p>
+
+					<div class="r-hstack flow justify-around items-stretch">
+						<div class="state fragment fragment-background" data-fragment-index="0">
+							docx
+						</div>
+						<div class="process">
+							word
+						</div>
+						<div class="state">
+							pdf
+						</div>
+					</div>
+
+					<div data-fragment-index="0" class="fragment" style="padding-top: 50px;">
+						Der "Quellcode" (docx, pptx)
+
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Ohne Quellcode, Fehlen 2 R's</li>
+							<li>Revise: the right to adapt, adjust,
+								modify, or alter the content itself</li>
+							<li>Remix: the right to combine the
+								original or revised content with other material to create something new</li>
+
+
+						</ul>
+					</aside>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#264653">
+					<h2>2. Offene Formate</h2>
+					<p>mittel  <span class="difficulty-dots">●●○</span></p>
+				</section>
+
+				<section>
+
+					<p style="margin-bottom: 150px;">Der klassische Workflow:</p>
+
+					<div class="r-hstack flow justify-around items-start">
+						<div class="state fragment fragment-background" data-fragment-index="0">
+							docx
+						</div>
+						<div class="process">
+							word
+						</div>
+						<div class="state">
+							pdf
+						</div>
+					</div>
+
+					<div data-fragment-index="0" class="fragment" style="padding-top: 50px;">
+						In der Theorie offen,<em>de facto</em> aber nicht
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Seit der 1. Version von MS Word 1983 ist das doc Format proprietär und geschlossen</li>
+							<li>MS hat die doc Spezifikation erst 2006 freigegeben.</li>
+							<li>nachdem das Format nachkonstruiert, <q>reverse engineered</q> wurde </li>
+						</ul>
+					</aside>
+
+
+
+
+				</section>
+
+				<section>
+					<p>Ein alternativer Workflow</p>
+
+					<div class="r-hstack flow justify-around items-start">
+						<div class="state fragment fragment-background" data-fragment-index="0">
+							markdown
+						</div>
+						<div class="process fragment fragment-background" data-fragment-index="1">
+							quarto
+						</div>
+						<div class="state">
+							pdf / html
+						</div>
+					</div>
+
+					<div class="r-stack" style="padding-top: 50px;">
+						<div data-fragment-index="0" class="fragment fade-in-then-out">
+							Ein <em>reines</em> Text Dokument in einer markup Sprache</div>
+						<div data-fragment-index="1" class="fragment fade-in-then-out">Ein OpenSource Tool </div>
+					</div>
+
+				</section>
+
+				<section>
+					<div class="r-hstack items-start">
+						<div id="fox-story-input">
+							<pre class="markdown fragment-half">
+								<div class="circles"><span>⏺</span><span>⏺</span><span>⏺</span></div>
+								<code data-trim class="prettycode">
+								
+									## A story of a fox
+								
+									The *quick* brown Fox 
+									jumps over the **lazy**
+									dog. 
+								
+									![](quick-fox.jpg)
+								</code>
+							
+							</pre>
+						</div>
+	
+	
+						<div id="fox-story-output" class="fragment">
+	
+							<p id="fox-title">A story of a fox</p>
+	
+							<p style="text-align: left; font-size: x-large;"> The <em>quick</em> brown Fox jumps over the <b>lazy</b> dog.</p>
+							<img data-src="images/quick-fox-0.jpeg" style="width: 300px;">
+	
+						</div>
+					</div>
+
+					<aside class="notes">
+						<ul>
+							<li>Code wo man mit der Markup sprache "Markdown" seinen Text gestaltet</li>
+
+							<li>Quarto Generiert eine vielfältige Anzahl outputs: PDF, website, docx,</li>
+
+							<li>Ein Beispiel gefällig?</li>
+
+
+						</ul>
+					</aside>
+				</section>
+
+				<section data-background-iframe="https://computationalmovementanalysis.github.io/FS23/">
+					
+				</section>
+
+
+
+				<section>
+					<span class="hl">Students4OER II</span>: Was haben wir gemacht?
+
+					<ul>
+						<li class="fragment">Lernressource: "Quarto für OER" erstellt<br>
+							(<a href="https://fit-mit-markdown.github.io/">fit-mit-markdown.github.io</a>)
+
+						</li>
+						<li class="fragment">Halb-Tages-Workshop "Quarto für OER" durchgeführt<br>
+							(<a href="https://fit-mit-markdown.github.io/Quarto-Schulung">fit-mit-markdown.github.io/Quarto-Schulung</a>)
+						</li>
+
+						<li class="fragment">
+							Quarto in BA- / MA-Kursen unterrichtet<br>Studierende haben ihre Projektarbeiten mit Quarto umgesetzt
+						</li>
+
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#264653">
+					<h2>3. Kollaboration durch DVCS</h2>
+
+					<p>schwer  <span class="difficulty-dots">●●●</span></p>
+
+					<aside class="notes">
+						<ul>
+							<li>Kollaboration ist schwierig!</li>
+							<li>Für Dekaden ein Ungelöstes Problem in der IT, wo häufig 100te bis 1000de an einem Projekt arbeiten</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section data-background-image="images/53312185110_776ffff6ce_k.jpg" data-background-size="contain" data-background-color="#000019">
+
+
+					<h2 id="git" class="fragment strokeme"><i class="fa-brands fa-git"></i></h2>
+
+					<aside class="notes">
+						<ul>
+							<li>Der Zentrale Anspruch dabei: Das Wissen und Infrmation Fliessen kann wie ein Fluss</li>
+							<li>Jederzeit sollte eine Verzweigung vom Fluss möglich sein</li>
+							<li>Dieser neue Strang soll sich selbständig weiterentwickeln können und sich ggf. zu einem
+								eignenständigen Fluss entwickeln</li>
+							<li>Aber, eine Rückführung in den Ursprungsfluss sollte immer möglich sein</li>
+						</ul>
+
+						So weit nachvollziehbar. Aber die Ansprüche gehen noch weiter:
+
+						<ul>
+							<li>Eine Verzweigung ist nur dann ebenbürtig, wenn sie auch die bis zu diesem Zeitpunkt
+								angesammelte Historie mitnehmen kann.</li>
+							<li>Also die historie aller Änderungen, Versionen und Varianten</li>
+							<li>Ein sehr hoher anspruch, der lange nicht erfüllt wurde. Bis Tages Linus Torvals es satt
+								hatte, sich für eine Weile zurückzog und in einem Zug eine Software schrieb die so gut
+								war dass sie weltweit zur Anwendung kommen sollte: Git </li>
+						</ul>
+					</aside>
+
+
+				</section>
+
+				<section>
+					<p style="font-size: 300%;"><i class="fa-brands fa-github"></i> GitHub</p>
+					<p><a href="https://github.com/">github.com</a> / <a href="https://github.zhaw.ch">github.zhaw.ch</a></p>
+					
+					<aside class="notes">
+						<ul>
+							<li>Eine Website, wo man mittels der OS Software Git seinen Code wie auch deren Outputs (HTML / PDF) hosten kann</li>
+						</ul>
+					
+					</aside>
+				</section>
+
+				<section>
+					<p><span class="hl">Students4OER II</span>: Was haben wir gemacht?</p>
+
+					<ol>
+						<li class="fragment">Statistikunterlagen von docx in Markdown überführt</li>
+						<li class="fragment">Mit Markdown ein PDF und eine Webseite erstellt<br>
+							<a href="https://researchmethods-zhaw.github.io/Statistik/">researchmethods-zhaw.github.io/Statistik/</a></li>
+						<li class="fragment">Studierende zu Cocreation eingeladen</li>
+					</ol>
+
+				</section>
+
+				<section>
+					Wie sieht das Konkret aus?
+
+					<ul>
+						<li class="fragment">Die Anleitung: <a href="https://researchmethods-zhaw.github.io/GitHub-Anleitung">researchmethods-zhaw.github.io/GitHub-Anleitung</a></li>
+						<li class="fragment">Die Korrekturen: <a href="https://github.com/ResearchMethods-ZHAW/Statistik/pulls?q=">github.com/ResearchMethods-ZHAW/Statistik/pulls</a></li>
+					</ul>
+				</section>
+
+				
+			</section>
+
+			<section>
+					
+				<section data-background-color="#264653">
+					<h2>Wrap Up</h2>
+				</section>
+				<section>
+
+					<div class="r-vstack justify-start" style="align-items: start;">
+						<div>
+							<div class="fragment r-hstack items-stretch">
+								1. Die <q>5-R Activities</q>&nbsp;&nbsp;von OER: 
+								
+								<span class="hl">&nbsp;Re</span>
+								<span class="r-stack items-stretch">
+								<span class="fragment five-r fade-in-then-out">tain</span>
+								<span class="fragment five-r fade-in-then-out">use</span>
+								<span class="fragment five-r fade-in-then-out">vise</span>
+								<span class="fragment five-r fade-in-then-out">mix</span>
+								<span class="fragment five-r fade-in">distribute</span>
+								</span>
+							</div>
+						</div>
+						<div class="fragment">2. <span style="text-decoration: underline;">Mindestens</span>&nbsp;&nbsp;<em>revise</em> & <em>remix</em> müssen technisch ermöglicht werden</div>
+						<div class="fragment">3. Open Source Software bieten hierfür gute Lösungen </div>
+						<div class="fragment" style="text-align: left;">4. Verwendung von Markdown (+ Quarto) eröffnen neue Möglichkeiten
+							<ul>
+								<li class="fragment">der Publikation (Websites)</li>
+								<li class="fragment">der Kollaboration (GitHub)</li>
+							</ul>
+						</div>
+						<div></div>
+					
+					</div>
+					
+				</section>
+
+				<section>
+					<h2>Nächste Schritte</h2>
+
+					<ul>
+						<li><a href="https://fit-mit-markdown.github.io/">fit-mit-markdown.github.io</a> (WIP)</li>
+						<li>Get in Touch! <i class="fa-regular fa-hand-point-right"></i></li>
+						<ul>
+							<li>Nils: <a href="mailto:rata@zhaw.ch">rata@zhaw.ch</a> / 058 934 55 63</li>
+							<li>Nicole: <a href="mailto:krun@zhaw.ch">krun@zhaw.ch</a> / 058 934 62 26</li>							
+							<li>Dominic: <a href="mailto:luoe@zhaw.ch">luoe@zhaw.ch</a> / 058 934 55 63 (nur bis 07/2024)</li>
+						</ul>
+					</ul>
+				</section>
+			</section>
+			<section>
+			<section data-background-color="#264653">
+				<h2>Abbildungen</h2>
+
+				<div id="list-of-images">
+
+					<div>Bild</div>
+					<div>Urheber (und ggf. Veränderungen)</div>
+					<div>Quelle</div>
+					<div>Lizenz</div>
+
+					<div style="display: grid; display: flex">
+						<img data-src="images/rata.webp" width="33%">
+						<img data-src="images/krun.webp" width="33%">
+						<img data-src="images/luoe.webp" width="33%">
+					</div>
+					<div></div>
+					<div><a href="https://www.zhaw.ch/en/about-us/person/rata/">zhaw.ch</a></div>
+					<div></div>
+
+					<div><img data-src="images/VR_and_Greshan3.png" alt="" srcset=""></div>
+					<div>Visvanath Ratnaweera</div>
+					<div>Personal Copy</div>
+					<div>All rights reserved</div>
+
+					<div><img data-src="images/pexels-photo-18278540.jpeg" alt="" srcset=""></div>
+					<div>Semih Kukçu</div>
+					<div><a href="https://www.pexels.com/photo/people-shooting-with-bows-18278540/">pexels.com</a></div>
+					<div><a href="https://www.pexels.com/license/">Pexels license</a> (no attribution)</div>
+
+					<div><img data-src="images/quick-fox-0.jpeg" alt="" srcset=""></div>
+					<div>Generated using AI</div>
+					<div><a href="https://designer.microsoft.com/">designer.microsoft.com</a></div>
+					<div>copyright free</div>
+
+					<div><img data-src="images/53312185110_776ffff6ce_k.jpg" alt="" srcset=""></div>
+					<div>Dan Coe</div>
+					<div><a href="https://dancoecarto.com">dancoecarto.com</a> / <a href="https://www.flickr.com/photos/165735975@N07/53312185110/in/album-72177720312459901/">flickr.com</a></div>
+					<div><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a></div>
+
+					<div><img data-src="images/pexels-gratisography-519.jpg" alt="" srcset=""></div>
+					<div>Gratisography</div>
+					<div><a href="https://www.pexels.com/photo/light-sign-typography-lighting-519/">pexels.com</a></div>
+					<div><a href="https://www.pexels.com/license/">Pexels license</a> (no attribution)</div>
+
+
+				</div>
+
+
+
+			</section>
+
+			<section data-background-image="images/pexels-gratisography-519.jpg">
+
+			</section>
+
+		</section>
+		</div>
+	</div>
+
+	<div style="top: 10px; left: 10px; position: absolute;">
+		<img src="images/zhaw_sw_neg.png" style="height: 40px;">
+	</div>
+
+	<script src="revealjs/dist/reveal.js"></script>
+	<script src="revealjs/plugin/notes/notes.js"></script>
+	<script src="revealjs/plugin/markdown/markdown.js"></script>
+	<script src="revealjs/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			transition: "convex",
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
