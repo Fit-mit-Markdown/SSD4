@@ -136,6 +136,11 @@ body .reveal {
     background-color: #264653;
 }
 
+.flow .process{
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
 /* .flow .process{
     padding-left: 50px;
     padding-right: 50px;
