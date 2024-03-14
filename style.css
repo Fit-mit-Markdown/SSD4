@@ -181,6 +181,18 @@ body .reveal {
     width: 50% !important;
 }
 
+#fox-story-input code{
+    border: 2px solid #E76F51;
+}
+
+#fox-story-input pre:before{
+    content: "fox-story.md";
+    position:fixed;
+    font-family: monospace;
+    left: 20px ;
+    font-size: large;
+}
+
 #fox-story-output{
     background-color: #264653; 
     width: 50%;
