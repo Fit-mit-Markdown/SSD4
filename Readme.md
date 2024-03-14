@@ -1,5 +1,15 @@
 
 
+## Git(Hub) Setup
+
+Ich arbeite hier mit Tags. 
+
+    git tag -a 1.0 -m "initial approach. good for non-oer audience intrested in project results"
+    git push origin 1.0
+
+
+So kann ich diese Version 1.0 immer wieder zurück erhalten. Ggf. mache ich aus dem Tag ein GitHub release, mal schauen.
+
 ## Storyline
 
 Pitch (10')
@@ -10,10 +20,6 @@ Pitch (10')
 
 
 Workshop (20')
-
-
-
-
 
 
 
