@@ -11,7 +11,7 @@ Ich arbeite hier mit Tags.
 So kann ich diese Version 1.0 immer wieder zurück erhalten. Ggf. mache ich aus dem Tag ein GitHub release, mal schauen.
 
 
-## Anektdotes
+## Anekdotes
 
 ## Seven Easy Steps to Open Science
 
