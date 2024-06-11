@@ -21,6 +21,17 @@ body .reveal {
 }
 
 
+#urls{
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;	
+    grid-auto-flow: column; 
+    font-size: x-large;
+    align-content: start;
+}
+
+#urls > *{
+    justify-self: start;
+}
 
 /* profiles pages start */
 #profiles img{
@@ -28,8 +39,9 @@ body .reveal {
     width: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
+
+
 
 .img-left{
     margin-right: 20px;
